@@ -1,0 +1,16 @@
+spring:
+  liquibase:
+    change-log: db-changeLog/changelog-master.yml
+    enabled: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+   # url: jdbc:postgresql://IP_NUMBER:PORT_NUMBER/DB_NAME
+   # username: DB_username
+   # password: DB_password
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+          show_sql: true
+          format_sql: true
